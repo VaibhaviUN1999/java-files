@@ -71,6 +71,11 @@ public class Dam {
 		dam.add(name29);
 		System.out.println(dam);
 		System.out.println("=========================");
+		System.out.println("=========================");
+        Collection<String> coll=new ArrayList();
+		coll.addAll(dam);
+		System.out.println(dam);
+		System.out.println("=========================");
 		System.out.println("==========STARTS WITH===============");
 		
 		Iterator<String> itr1=dam.iterator();
@@ -127,20 +132,42 @@ public class Dam {
 		System.out.println("===========UPPER CASE==============");
 		for(String element : dam)
 		{
-			if(element.toUpperCase() != null)
-			{
-				System.out.println(element);
-			}
+			
+				System.out.println(element.toUpperCase());
+			
 		}
 		System.out.println("=========================");
 		System.out.println("===========LOWER CASE==============");
 		for(String element : dam)
 		{
-			if(element.toLowerCase() != null)
-			{
-				System.out.println(element);
-			}
+			
+				System.out.println(element.toLowerCase());
+			
 		}
+		System.out.println("=========================");
+		System.out.println("=========================");
+        System.out.println("polindrome of dam");
+		
+
+		Iterator<String> itr5=dam.iterator();
+		while(itr5.hasNext())
+		{
+			String rev="";
+			String element=itr5.next();
+
+			for(int i=element.length()-1 ; i>=0;i--)
+			{
+				rev=rev+element.toLowerCase().charAt(i);
+			}
+			System.out.println(rev);
+		
+			if(element.equals(rev))
+			{
+				System.out.println("========================");
+				System.out.println("element is polindrome "+element);
+			}
+				
+			}
 		
 	
 		
