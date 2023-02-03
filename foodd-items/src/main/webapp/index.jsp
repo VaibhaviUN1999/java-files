@@ -22,6 +22,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
    <a class="btn btn-outline-warning" href="FoodItem.jsp">Home</a>
+    <a class="btn btn-outline-warning" href="testjsp.jsp">Home</a>
      
     </div>
  
